@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://8th-wonder.vercel.app/sitemap.xml
