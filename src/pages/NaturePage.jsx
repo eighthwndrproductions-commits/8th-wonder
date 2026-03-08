@@ -169,7 +169,7 @@ export default function NaturePage() {
         <div className="n-capabilities__inner">
           <div className="n-capabilities__header">
             <span className="n-tag n-tag--dark">Capabilities</span>
-            <h2 className="n-capabilities__title">What you actually get.</h2>
+            <h2 className="n-capabilities__title">What we offer.</h2>
           </div>
           <div className="n-capabilities__grid">
             <div className="n-cap-col">
