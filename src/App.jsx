@@ -9,7 +9,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<CommercialPage />} />
-        <Route path="/nature" element={<NaturePage />} />
+        <Route path="/earth" element={<NaturePage />} />
       </Routes>
     </>
   )

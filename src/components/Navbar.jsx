@@ -18,7 +18,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState('')
   const location = useLocation()
-  const isNature = location.pathname === '/nature'
+  const isNature = location.pathname === '/earth'
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
@@ -77,7 +77,7 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           <Link
-            to="/nature"
+            to="/earth"
             className="text-[#f5f0e8] transition-opacity hover:opacity-80 flex items-center gap-3"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
@@ -171,7 +171,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-4 ml-8">
           <Link
-            to="/nature"
+            to="/earth"
             className="border border-[#2a5440] text-[#2a5440] hover:bg-[#2a5440] hover:text-white transition-all duration-300 px-4 py-1.5"
             style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase' }}
           >
@@ -219,7 +219,7 @@ export default function Navbar() {
                 </a>
               ))}
               <Link
-                to="/nature"
+                to="/earth"
                 className="border border-[#2a5440] text-[#2a5440] hover:bg-[#2a5440] hover:text-white transition-all duration-300 px-4 py-1.5 text-center mt-2"
                 style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' }}
                 onClick={() => setMenuOpen(false)}
