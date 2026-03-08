@@ -146,7 +146,7 @@ export default function NaturePage() {
         <div className="n-services__inner">
           <div className="n-services__header">
             <span className="n-tag n-tag--light">Specialties</span>
-            <h2 className="n-services__title">What we do</h2>
+            <h2 className="n-services__title">Who we work with</h2>
           </div>
           <div className="n-services__card-grid">
             {services.map((s) => (
