@@ -4,12 +4,12 @@ import Logo from '../components/Logo'
 import './NaturePage.css'
 
 // Stock images — replace all with real 8th Wonder drone content
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=1920&q=80'
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=1400&q=75&auto=format'
 
 const gallery = [
-  { label: 'Rainforest Canopy Survey', image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80' },
-  { label: 'Reef & Coastal Mapping', image: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800&q=80' },
-  { label: 'Surf Documentary', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80' },
+  { label: 'Rainforest Canopy Survey', image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=700&q=75&auto=format' },
+  { label: 'Reef & Coastal Mapping', image: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=700&q=75&auto=format' },
+  { label: 'Surf Documentary', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=75&auto=format' },
 ]
 
 const services = [
@@ -17,37 +17,37 @@ const services = [
     tag: 'conservation',
     title: 'ecology & wildlife',
     desc: "monitoring, mapping, and visual storytelling for regeneration, habitat restoration, and environmental research. for projects that span years, not days.",
-    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&q=75&auto=format',
   },
   {
     tag: 'agriculture',
     title: 'farming & land',
     desc: "crop health, irrigation, boundary mapping, and seasonal records. practical aerial data that helps you see the full picture and help make better calls.",
-    image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=500&q=75&auto=format',
   },
   {
     tag: 'government',
     title: 'councils & planning',
     desc: "infrastructure audits, flood mapping, and community planning. clear, compliant, and actually useful aerial records for decision-makers.",
-    image: 'https://images.unsplash.com/photo-1448630360428-65456885c650?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1448630360428-65456885c650?w=500&q=75&auto=format',
   },
   {
     tag: 'sport & creative',
     title: 'athletes & artists',
     desc: "trail, surf, climb, ride — we capture athletes, creators, and artists in the beautiful environments they call their playground.",
-    image: 'https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=500&q=75&auto=format',
   },
   {
     tag: 'film & story',
     title: 'documentary & film',
     desc: "we partner with directors, creators, and production houses to capture sequences that actually move people.",
-    image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=500&q=75&auto=format',
   },
   {
     tag: 'impact',
     title: 'sustainability-first',
     desc: "low-impact flights, wildlife-conscious planning, and a genuine commitment to leaving every location better than we found it.",
-    image: 'https://images.unsplash.com/photo-1504681869696-d977211a5f4c?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1504681869696-d977211a5f4c?w=500&q=75&auto=format',
   },
 ]
 
@@ -100,7 +100,7 @@ export default function NaturePage() {
 
       {/* ===== 1. HERO ===== */}
       <section className="n-hero">
-        <img className="n-hero__image" src={HERO_IMAGE} alt="Aerial rainforest canopy" />
+        <img className="n-hero__image" src={HERO_IMAGE} alt="Aerial rainforest canopy" fetchPriority="high" />
         <div className="n-hero__overlay" />
         <div className="n-hero__content">
           <span className="n-tag n-tag--light">Drone Videography Studio</span>
@@ -260,11 +260,9 @@ export default function NaturePage() {
           </div>
 
           {submitted ? (
-            <div style={{ padding: '3rem 0' }}>
-              <p className="serif" style={{ fontSize: '1.75rem', color: '#1a1a1a', marginBottom: '1rem' }}>
-                nice one!
-              </p>
-              <p style={{ fontSize: '0.95rem', color: '#555', lineHeight: 1.7 }}>
+            <div className="n-form__success">
+              <p className="n-form__success-title serif">nice one!</p>
+              <p className="n-form__success-text">
                 we'll get back to you within a day or two. looking forward to
                 hearing more about what you're working on.
               </p>
@@ -324,12 +322,7 @@ export default function NaturePage() {
         <div className="n-footer__inner">
           <div className="n-footer__brand">
             <Logo size="small" />
-            <span
-              className="n-footer__earth"
-              style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: '0.7rem', letterSpacing: '0.15em', textTransform: 'uppercase' }}
-            >
-              earth
-            </span>
+            <span className="n-footer__earth">earth</span>
           </div>
           <div className="n-footer__badges">
             <span className="n-tag n-tag--light">CASA Licensed</span>
