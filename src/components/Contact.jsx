@@ -73,7 +73,7 @@ export default function Contact() {
               <h3 className="text-xl font-bold text-slate-800 mb-6">Get in Touch Directly</h3>
               <div className="flex flex-col gap-5">
                 <a
-                  href="mailto:hello@8thwonder.com.au"
+                  href="mailto:eighthwndrproductions@gmail.com"
                   className="flex items-center gap-4 group"
                 >
                   <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center group-hover:bg-amber-500 transition-colors duration-300">
@@ -81,17 +81,17 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-xs text-slate-400 font-medium uppercase tracking-wide">Email</p>
-                    <p className="text-slate-800 font-medium">hello@8thwonder.com.au</p>
+                    <p className="text-slate-800 font-medium">eighthwndrproductions@gmail.com</p>
                   </div>
                 </a>
 
-                <a href="tel:+61400000000" className="flex items-center gap-4 group">
+                <a href="tel:+61460813424" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center group-hover:bg-amber-500 transition-colors duration-300">
                     <Phone className="text-amber-600 group-hover:text-white transition-colors duration-300" size={20} />
                   </div>
                   <div>
                     <p className="text-xs text-slate-400 font-medium uppercase tracking-wide">Phone</p>
-                    <p className="text-slate-800 font-medium">0400 000 000</p>
+                    <p className="text-slate-800 font-medium">0460 813 424</p>
                   </div>
                 </a>
               </div>
