@@ -14,39 +14,39 @@ const gallery = [
 
 const services = [
   {
-    tag: 'Conservation',
-    title: 'Ecology & Wildlife',
-    desc: "Monitoring, mapping, and visual storytelling for regeneration, habitat restoration, and environmental research. For projects that span years, not days.",
+    tag: 'conservation',
+    title: 'ecology & wildlife',
+    desc: "monitoring, mapping, and visual storytelling for regeneration, habitat restoration, and environmental research. for projects that span years, not days.",
     image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80',
   },
   {
-    tag: 'Agriculture',
-    title: 'Farming & Land',
-    desc: "Crop health, irrigation, boundary mapping, and seasonal records. Practical aerial data that helps you see the full picture and help make better calls.",
+    tag: 'agriculture',
+    title: 'farming & land',
+    desc: "crop health, irrigation, boundary mapping, and seasonal records. practical aerial data that helps you see the full picture and help make better calls.",
     image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80',
   },
   {
-    tag: 'Government',
-    title: 'Councils & Planning',
-    desc: "Infrastructure audits, flood mapping, and community planning. Clear, compliant, and actually useful aerial records for decision-makers.",
+    tag: 'government',
+    title: 'councils & planning',
+    desc: "infrastructure audits, flood mapping, and community planning. clear, compliant, and actually useful aerial records for decision-makers.",
     image: 'https://images.unsplash.com/photo-1448630360428-65456885c650?w=600&q=80',
   },
   {
-    tag: 'Sport & Creative',
-    title: 'Athletes & Artists',
-    desc: "Trail, surf, climb, ride — we capture athletes, creators, and artists in the beautiful environments they call their playground.",
+    tag: 'sport & creative',
+    title: 'athletes & artists',
+    desc: "trail, surf, climb, ride — we capture athletes, creators, and artists in the beautiful environments they call their playground.",
     image: 'https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=600&q=80',
   },
   {
-    tag: 'Film & Story',
-    title: 'Documentary & Film',
-    desc: "We partner with directors, creators, and production houses to capture sequences that actually move people.",
+    tag: 'film & story',
+    title: 'documentary & film',
+    desc: "we partner with directors, creators, and production houses to capture sequences that actually move people.",
     image: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&q=80',
   },
   {
-    tag: 'Impact',
-    title: 'Sustainability-First',
-    desc: "Low-impact flights, wildlife-conscious planning, and a genuine commitment to leaving every location better than we found it.",
+    tag: 'impact',
+    title: 'sustainability-first',
+    desc: "low-impact flights, wildlife-conscious planning, and a genuine commitment to leaving every location better than we found it.",
     image: 'https://images.unsplash.com/photo-1504681869696-d977211a5f4c?w=600&q=80',
   },
 ]
@@ -292,7 +292,6 @@ export default function NaturePage() {
                     <option value="council">councils / planning</option>
                     <option value="athletic">athletes / artists</option>
                     <option value="documentary">documentary / film</option>
-                    <option value="sustainability">sustainability</option>
                     <option value="other">other</option>
                   </select>
                 </div>
