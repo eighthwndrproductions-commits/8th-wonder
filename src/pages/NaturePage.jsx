@@ -146,7 +146,7 @@ export default function NaturePage() {
         <div className="n-services__inner">
           <div className="n-services__header">
             <span className="n-tag n-tag--light">Specialties</span>
-            <h2 className="n-services__title">Who we work with</h2>
+            <h2 className="n-services__title">Our Commitment.</h2>
           </div>
           <div className="n-services__card-grid">
             {services.map((s) => (
@@ -228,7 +228,7 @@ export default function NaturePage() {
       <section className="n-gallery">
         <div className="n-gallery__header">
           <span className="n-tag n-tag--light">Portfolio</span>
-          <h2 className="n-gallery__title">Selected Work</h2>
+          <h2 className="n-gallery__title">Selected Work.</h2>
         </div>
         <div className="n-gallery__grid">
           {gallery.map((item) => (
@@ -249,7 +249,7 @@ export default function NaturePage() {
           <div className="n-enquire__left">
             <span className="n-tag n-tag--green">Get in Touch</span>
             <h2 className="n-enquire__headline">
-              Do you have a project<br />to execute?
+              Do you have a project<br />to execute.
             </h2>
             <p className="n-enquire__sub">
               fully planned project or half-baked idea — we love hearing
