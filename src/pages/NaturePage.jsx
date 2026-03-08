@@ -146,7 +146,7 @@ export default function NaturePage() {
         <div className="n-services__inner">
           <div className="n-services__header">
             <span className="n-tag n-tag--light">Specialties</span>
-            <h2 className="n-services__title">Our Commitment.</h2>
+            <h2 className="n-services__title">our commitment.</h2>
           </div>
           <div className="n-services__card-grid">
             {services.map((s) => (
@@ -169,37 +169,37 @@ export default function NaturePage() {
         <div className="n-capabilities__inner">
           <div className="n-capabilities__header">
             <span className="n-tag n-tag--dark">Capabilities</span>
-            <h2 className="n-capabilities__title">What we offer.</h2>
+            <h2 className="n-capabilities__title">what we offer.</h2>
           </div>
           <div className="n-capabilities__grid">
             <div className="n-cap-col">
-              <div className="n-cap-col__title">Capture</div>
+              <div className="n-cap-col__title">capture</div>
               <ul>
                 <li>4K / 6K aerial video</li>
-                <li>High-res aerial stills</li>
-                <li>Drone-mounted gimbal footage</li>
-                <li>Multi-flight project coverage</li>
+                <li>high-res aerial stills</li>
+                <li>drone-mounted gimbal footage</li>
+                <li>multi-flight project coverage</li>
                 <li>GPS-tagged image logs</li>
               </ul>
             </div>
             <div className="n-cap-col">
-              <div className="n-cap-col__title">Post-Production</div>
+              <div className="n-cap-col__title">post-production</div>
               <ul>
-                <li>Colour grading</li>
-                <li>Editorial cuts</li>
-                <li>Motion graphics & titles</li>
-                <li>Music licensing support</li>
-                <li>Export for broadcast, web, or social</li>
+                <li>colour grading</li>
+                <li>editorial cuts</li>
+                <li>motion graphics & titles</li>
+                <li>music licensing support</li>
+                <li>export for broadcast, web, or social</li>
               </ul>
             </div>
             <div className="n-cap-col">
-              <div className="n-cap-col__title">Planning & Logistics</div>
+              <div className="n-cap-col__title">planning & logistics</div>
               <ul>
-                <li>Location scouting</li>
+                <li>location scouting</li>
                 <li>CASA flight approvals</li>
-                <li>Risk assessment & safety plans</li>
-                <li>Landowner coordination</li>
-                <li>Weather window scheduling</li>
+                <li>risk assessment & safety plans</li>
+                <li>landowner coordination</li>
+                <li>weather window scheduling</li>
               </ul>
             </div>
           </div>
@@ -228,7 +228,7 @@ export default function NaturePage() {
       <section className="n-gallery">
         <div className="n-gallery__header">
           <span className="n-tag n-tag--light">Portfolio</span>
-          <h2 className="n-gallery__title">Selected Work.</h2>
+          <h2 className="n-gallery__title">selected work.</h2>
         </div>
         <div className="n-gallery__grid">
           {gallery.map((item) => (
@@ -249,13 +249,14 @@ export default function NaturePage() {
           <div className="n-enquire__left">
             <span className="n-tag n-tag--green">Get in Touch</span>
             <h2 className="n-enquire__headline">
-              Do you have a project<br />to execute.
+              do you have a project<br />to execute?
             </h2>
             <p className="n-enquire__sub">
               fully planned project or half-baked idea — we love hearing
               about both. drop us a message and we'll figure out the
               rest together.
             </p>
+            <a href="tel:+61460813424" className="n-enquire__phone">0460 813 424</a>
           </div>
 
           {submitted ? (
@@ -286,12 +287,12 @@ export default function NaturePage() {
                   <label className="n-form__label" htmlFor="n-type">What kind of project?</label>
                   <select id="n-type" className="n-form__select" name="projectType" required value={formData.projectType} onChange={handleChange}>
                     <option value="" disabled>select...</option>
+                    <option value="conservation">ecology / wildlife</option>
+                    <option value="farming">farming / land</option>
+                    <option value="council">councils / planning</option>
+                    <option value="athletic">athletes / artists</option>
                     <option value="documentary">documentary / film</option>
-                    <option value="athletic">sport / adventure</option>
-                    <option value="conservation">conservation / ecology</option>
-                    <option value="council">council / government</option>
-                    <option value="farming">farming / agriculture</option>
-                    <option value="content">content / social</option>
+                    <option value="sustainability">sustainability</option>
                     <option value="other">other</option>
                   </select>
                 </div>
@@ -307,7 +308,7 @@ export default function NaturePage() {
               </div>
 
               <div className="n-form__field">
-                <label className="n-form__label" htmlFor="n-email">Email</label>
+                <label className="n-form__label" htmlFor="n-email">Email <span style={{ color: '#c44' }}>*</span></label>
                 <input id="n-email" className="n-form__input" type="email" name="email" placeholder="your@email.com" required value={formData.email} onChange={handleChange} />
               </div>
 

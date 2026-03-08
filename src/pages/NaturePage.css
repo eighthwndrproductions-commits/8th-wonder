@@ -722,6 +722,21 @@
   margin: 0;
 }
 
+.n-enquire__phone {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--n-text);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: opacity 0.3s;
+}
+
+.n-enquire__phone:hover {
+  opacity: 0.6;
+}
+
 .n-form {
   display: flex;
   flex-direction: column;
