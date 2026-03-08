@@ -172,7 +172,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-4 ml-8">
           <Link
             to="/earth"
-            className="border border-[#2a5440] text-[#2a5440] hover:bg-[#2a5440] hover:text-white transition-all duration-300 px-4 py-1.5"
+            className="bg-[#2a5440] text-white border border-[#2a5440] hover:bg-transparent hover:text-[#2a5440] transition-all duration-300 px-4 py-1.5"
             style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: '0.65rem', letterSpacing: '0.2em', textTransform: 'uppercase' }}
           >
             visit earth
@@ -220,7 +220,7 @@ export default function Navbar() {
               ))}
               <Link
                 to="/earth"
-                className="border border-[#2a5440] text-[#2a5440] hover:bg-[#2a5440] hover:text-white transition-all duration-300 px-4 py-1.5 text-center mt-2"
+                className="bg-[#2a5440] text-white border border-[#2a5440] hover:bg-transparent hover:text-[#2a5440] transition-all duration-300 px-4 py-1.5 text-center mt-2"
                 style={{ fontFamily: "'Playfair Display', serif", fontStyle: 'italic', fontSize: '0.7rem', letterSpacing: '0.2em', textTransform: 'uppercase' }}
                 onClick={() => setMenuOpen(false)}
               >
