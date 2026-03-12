@@ -514,16 +514,28 @@
   }
 }
 
+.n-gal-item__num {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #fff;
+  z-index: 2;
+}
+
 .n-gal-item__info {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 3rem 1.5rem 1.25rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
   opacity: 0;
   transform: translateY(6px);
   transition: opacity 0.4s ease, transform 0.4s ease;
@@ -550,6 +562,13 @@
   font-weight: 400;
   font-size: 1.1rem;
   color: #fff;
+}
+
+.n-gal-item__desc {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
 }
 
 /* ============ ENQUIRE ============ */

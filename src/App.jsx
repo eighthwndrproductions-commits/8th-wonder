@@ -8,8 +8,8 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<CommercialPage />} />
-        <Route path="/earth" element={<NaturePage />} />
+        <Route path="/" element={<NaturePage />} />
+        <Route path="/otherindustries" element={<CommercialPage />} />
       </Routes>
     </>
   )

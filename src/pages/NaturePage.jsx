@@ -7,9 +7,9 @@ import './NaturePage.css'
 const HERO_IMAGE = 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=1400&q=75&auto=format'
 
 const gallery = [
-  { label: 'Rainforest Canopy Survey', image: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=700&q=75&auto=format' },
-  { label: 'Reef & Coastal Mapping', image: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=700&q=75&auto=format' },
-  { label: 'Surf Documentary', image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=75&auto=format' },
+  { label: 'Coastal Regeneration', desc: 'Supported local teams on mapping and monitoring of coastal erosion and site regeneration planning. Aerial surveys, progress tracking, and visual documentation across multiple site visits.', image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=700&q=75&auto=format' },
+  { label: 'Property Revegetation', desc: 'Supported a family with their property revegetation and landscaping. Captured before-and-after aerial imagery to document planting progress, land contouring, and native species coverage.', image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=700&q=75&auto=format' },
+  { label: 'Aerial Farm Mapping', desc: 'Provided multi-farming aerial mapping across paddocks, cotton, and grazing land. High-resolution flyovers for boundary surveys, crop health checks, and seasonal land assessments.', image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=700&q=75&auto=format' },
 ]
 
 const services = [
@@ -53,14 +53,13 @@ const services = [
 
 // Placeholder logos — replace with real client/partner logos
 const logos = [
-  'Red Bull',
+  'Netflix',
+  'TEDx',
+  'B2Y',
+  'Sony Music',
+  'Complex',
   'Project Kaya',
   'Kojo',
-  'Patagonia',
-  'GoPro',
-  'The North Face',
-  'National Geographic',
-  'Tourism & Events QLD',
 ]
 
 export default function NaturePage() {
@@ -231,12 +230,14 @@ export default function NaturePage() {
           <h2 className="n-gallery__title">selected work.</h2>
         </div>
         <div className="n-gallery__grid">
-          {gallery.map((item) => (
+          {gallery.map((item, i) => (
             <div key={item.label} className="n-gal-item">
               <img src={item.image} alt={item.label} loading="lazy" />
+              <div className="n-gal-item__num">{String(i + 1).padStart(2, '0')}</div>
               <div className="n-gal-item__info">
-                <span className="n-gal-item__tag">Project</span>
+                <span className="n-gal-item__tag">Project {i + 1}</span>
                 <span className="n-gal-item__name">{item.label}</span>
+                <p className="n-gal-item__desc">{item.desc}</p>
               </div>
             </div>
           ))}
@@ -249,7 +250,7 @@ export default function NaturePage() {
           <div className="n-enquire__left">
             <span className="n-tag n-tag--green">Get in Touch</span>
             <h2 className="n-enquire__headline">
-              do you have a project<br />to execute?
+              do you have a project<br />in mind?
             </h2>
             <p className="n-enquire__sub">
               fully planned project or half-baked idea — we love hearing
@@ -329,7 +330,7 @@ export default function NaturePage() {
             <span className="n-tag n-tag--light">Fully Insured</span>
             <span className="n-tag n-tag--light">SEQ Wide</span>
           </div>
-          <Link to="/" className="n-footer__link">
+          <Link to="/otherindustries" className="n-footer__link">
             View Other Industries &rarr;
           </Link>
           <p className="n-footer__acknowledgement">
